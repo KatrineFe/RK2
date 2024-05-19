@@ -21,7 +21,7 @@ jobs:
         cmake --build _build
         echo FILES IN _build:
         ls _build
-        mv _build/prototype artifacts
+        mv _build/Singleton artifacts
         echo FILES IN artifacts:
         ls artifacts
     - name: Build (.deb)
