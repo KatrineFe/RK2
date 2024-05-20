@@ -53,8 +53,4 @@ TEST(SingletonTest, MultipleInstancesWithoutThreadSafety) {
     ASSERT_NE(sgn2, sgn3);
 }
 
-int main(int argc, char** argv) {
-    ::testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
-}
 
