@@ -30,9 +30,9 @@ jobs:
       working-directory: ${{runner.workspace}}/build
       shell: bash
       run: |
-      cmake --build . --config $BUILD_TYPE
-      mkdir artifacts
-      mv build/Singleton artifacts
+        cmake --build . --config $BUILD_TYPE
+        mkdir artifacts
+        mv build/Singleton artifacts
 
     - name: Test
       working-directory: ${{runner.workspace}}/build
